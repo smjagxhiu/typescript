@@ -1,0 +1,22 @@
+you can compile to another js file with:
+        tsc test.ts --out output-script.js
+
+continous compile
+        tsc test.ts --out output-script.js --watch
+
+to compile all the project you create a file named tsconfig.json at the root foolder
+to create that json file you can type
+        tsc --init
+
+then you only run
+        tsc 
+
+to create a node project
+        npm init
+
+in package.json you can put script to excecute like: "start": "tsc && node out/index.js"
+        npm start    
+
+install libraries i.e:
+        npm install lodash --save
+        npm install @types/lodash --save-dev             //type defintions
